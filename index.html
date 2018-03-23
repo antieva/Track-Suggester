@@ -2,15 +2,16 @@
 <html>
   <head>
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="js/jquery-3.3.1.js"></script>
     <script src="js/scripts.js"></script>
-    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <meta charset="utf-8">
     <title>Track Suggester</title>
   </head>
   <body>
     <div class="container">
       <header>
-        <h1>I JUST FINISHED INTRODUCTION TO PROGRAMMING</h1>
+        <h1>I JUST FINISHED MY 'INTRODUCTION TO PROGRAMMING' COURSE</h1>
         <h2>WHAT PROGRAMMING LANGUAGE SHOULD I LEARN NOW?</h2>
       </header>
 
@@ -35,7 +36,7 @@
         </div>
 
 
-        <h3>What are your main priorities</h3>
+        <h4>What are your main priorities</h4>
         <div class="radio">
           <label>
             <input type="radio" name="development" value="1" checked>
@@ -73,8 +74,9 @@
           </label>
         </div>
 
-        <h3>What do you enjoy the most</h3>
-        <select class="form-control" id="">
+
+        <label class="control-label" for="enjoy"><h4>What do you enjoy the most</h4></label>
+        <select class="form-control" id="enjoy">
           <option value="1">Composition and design</option>
           <option value="2">Colors, images and graphics</option>
           <option value="3">Logic building and technological Challenge</option>
@@ -82,28 +84,29 @@
           <option value="5">Neither of those</option>
         </select>
 
-        <h3>Which collocation describes you the best</h3>
-        <select class="form-control" id="">
+        <label class="control-label" for="describe"><h4>Which collocation describes you the best</h4></label>
+        <select class="form-control" id="describe">
           <option value="1">Quick learner</option>
           <option value="2">Good team player</option>
           <option value="3">Great at time and task management</option>
           <option value="4">Neither of those</option>
         </select>
 
-        <h3>What is your endgame goal</h3>
-        <select class="form-control" id="">
+        <label class="control-label" for="goal"><h4>What is your endgame goal</h4></label>
+        <select class="form-control" id="goal">
           <option value="1">Freelance</option>
           <option value="2">Get hired by large company like Microsoft</option>
-          <option value="3">Set up a tartup</option>
+          <option value="3">Set up a startup</option>
           <option value="4">I am not sure yet</option>
         </select>
 
-        <h3>In your spare time would you rather</h3>
-        <select class="form-control" id="">
-          <option value="1">Go hiking</option>
-          <option value="2">Practice coding</option>
-          <option value="3">Learn something new</option>
-          <option value="4">Watch TV</option>
+        <label class="control-label" for="spareaTime"><h4>Which programming language are you familiar with the most </h4></label>
+        <select class="form-control" id="spareTime">
+          <option value="1">JavaScript</option>
+          <option value="2">Ruby</option>
+          <option value="3">CSS</option>
+          <option value="4">Java</option>
+          <option value="5">None</option>
         </select>
 
         <button type="submit" class="btn btn-success">submit</button>
@@ -111,25 +114,25 @@
       </form>
 
       <div class="output" id="notYours">
-        <h3>Hey <span class=""></span></h3>
-        <p>It looks like programming is really for you. Try something else. There are lots of possibilities out there!</p>
+        <h3>Hey <span class="addressing"></span>!</h3>
+        <p>It looks like programming is not really for you. Try something else. There are lots of possibilities out there!</p>
         <p>Go ahead and check out some resources listed below to find your perfect career path</p>
         <ul>
           <li><a href="https://www.princetonreview.com/quiz/career-quiz">Career Quiz</a></li>
-          <li><a href="https://www.thebalance.com/steps-to-choosing-career-525506">How to make a career choice when undesided</li>
-            <li><a href="https://www.careerkey.org/choose-a-career/how-to-choose-a-career.html#.WrVCa2aZPBI">How to choose a career</li>
+          <li><a href="https://www.thebalance.com/steps-to-choosing-career-525506">How to make a career choice when undesided</a></li>
+          <li><a href="https://www.careerkey.org/choose-a-career/how-to-choose-a-career.html#.WrVCa2aZPBI">How to choose a career</a></li>
         </ul>
 
       </div>
 
       <div class="output" id="rubyRails">
-        <h3>Congratulations <span class=""></span>! You'r track of choice is Ruby/Rails</h3>
+        <h3>Congratulations <span class="addressing"></span>! You'r track of choice is Ruby/Rails</h3>
         <p>Ruby is a favorite language of developers building interactive web applications. If an app involves users creating accounts, entering information, and interacting with dynamic content, there's a good chance it is built with Ruby. Ruby became popular because the Rails framework, which is written with Ruby, simplified many of the common tasks associated with building web applications. It's most popular with startups and smaller companies who are looking to build their product quickly.</p>
 
       </div>
 
       <div class="output" id="cssReact">
-        <h3>Congratulations <span class=""></span>! You'r track of choice is CSS/React</h3>
+        <h3>Congratulations <span class="addressing"></span>! You'r track of choice is CSS/React</h3>
         <p>Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language. Although most often used to set the visual style of web pages and user interfaces written in HTML and XHTML, the language can be applied to any XML document, including plain XML, SVG and XUL, and is applicable to rendering in speech, or on other media. Along with HTML and JavaScript, CSS is a cornerstone technology used by most websites to create visually engaging webpages, user interfaces for web applications, and user interfaces for many mobile applications.</p>
 
         <p>CSS is designed primarily to enable the separation of presentation and content, including aspects such as the layout, colors, and fonts. This separation can improve content accessibility, provide more flexibility and control in the specification of presentation characteristics, enable multiple HTML pages to share formatting by specifying the relevant CSS in a separate .css file, and reduce complexity and repetition in the structural content.</p>
@@ -137,13 +140,13 @@
       </div>
 
       <div class="output" id="javaAndroid">
-        <<h3>Congratulations <span class=""></span>! You'r track of choice is Java/Android</h3>
+        <h3>Congratulations <span class="addressing"></span>! You'r track of choice is Java/Android</h3>
         <p>Java is also a favorite of enterprise companies, but its appeal is broader as well: it's one of the most popular of all programming languages, and it's used in everything from for high-performance processing to building Android user interfaces. Because Java has been very popular for a very long time and is used in so many applications, it is also a very high-demand language. If you're interested in working for an enterprise-level company, as an Android developer, or in high-performance applications, Java could be a good language to learn.</p>
 
       </div>
 
-      <div class="output" id="C#-NET">
-        <h3>Congratulations <span class=""></span>! You'r track of choice is C#/.NET</h3>
+      <div class="output" id="c-NET">
+        <h3>Congratulations <span class="addressing"></span>! You'r track of choice is C#/.NET</h3>
         <p>C# is most popular among bigger established businesses, often for building internal software. Because it's been around for a long time and has the backing of Microsoft, it is one of the most in-demand languages in the job market. C# has also been going through a bit of a rebirth lately, with Microsoft open sourcing the language and surrounding platform, porting it to run on Mac and Linux, and incorporating many of the best features of other languages. If you like the idea of working for a larger company on business software, C# is a great choice.</p>
 
       </div>
