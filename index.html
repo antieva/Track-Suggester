@@ -8,21 +8,34 @@
     <title>Track Suggester</title>
   </head>
   <body>
-    <h1></h1>
-    <p></p>
-    <p></p>
-    <h2></h2>
     <div class="container">
-      <form class="">
+      <header>
+        <h1>I JUST FINISHED INTRODUCTION TO PROGRAMMING</h1>
+        <h2>WHAT PROGRAMMING LANGUAGE SHOULD I LEARN NOW?</h2>
+      </header>
 
-        <h3></h3>
+      <p>If you're an Epicodus student or anybody wondering which language to learn, the first thing you need to decide is if you want to focus more on front-end or back-end development.</p>
+      <p>Front-end developers are responsible for a website’s user-facing code and the architecture of its immersive user experiences. In order to execute those objectives, front-end devs must be adept at three main languages: HTML, CSS, and Javascript programming. In addition to fluency in these languages, front-end devs need to be familiar with frameworks like Bootstrap, Foundation, Backbone, AngularJS, and EmberJS, which ensure great-looking content no matter the device, and libraries like jQuery and LESS, which package code into a more useful, time-saving form. A lot of front-end developer job listings also call for experience with Ajax, a widely used technique for using Javascript that lets pages dynamically load by downloading server data in the background.</p>
+      <p>In order to make the server, application, and database communicate with each other, back-end devs use server-side languages like PHP, Ruby, Python, Java, and .Net to build an application, and tools like MySQL, Oracle, and SQL Server to find, save, or change data and serve it back to the user in front-end code. Job openings for back-end developers often also call for experience with PHP frameworks like Zend, Symfony, and CakePHP; experience with version control software like SVN, CVS, or Git; and experience with Linux as a development and deployment system.
+      <br>Back-end devs use these tools to create or contribute to web applications with clean, portable, well-documented code. But before writing that code, they need to collaborate with business stakeholders to understand their particular needs, then translate those into technical requirements and come up with the most effective and efficient solution for architecting the technology.</p>
+      <br>
+      <p>Don't stress too much about making the right choice! That said, each language has found a bit of a niche, and depending on your interests, you might be attracted to one over another.</p>
+      <h3>Track suggester fot future Epicodus students</h3>
+      <p>While all languages have similarities, and switching between languages and platforms is very common in both internships and jobs, applicants should still choose the track they wish to complete with care.</p>
+      <p>Fill out our survay and find your perfect track!</p>
+    </div>
+
+    <div class="container">
+      <form class="survay">
+
+        <h3>Let's get started!</h3>
         <div class="form-group">
-          <label for=""></label>
-          <input id="" type="text" class="form-control">
+          <label for="name">Please enter your name</label>
+          <input id="name" type="text" class="form-control">
         </div>
 
 
-        <h3>What are your main priorities?</h3>
+        <h3>What are your main priorities</h3>
         <div class="radio">
           <label>
             <input type="radio" name="development" value="1" checked>
@@ -60,67 +73,78 @@
           </label>
         </div>
 
-        <h3></h3>
+        <h3>What do you enjoy the most</h3>
         <select class="form-control" id="">
-          <option value="1"></option>
-          <option value="2"></option>
-          <option value="3"></option>
-          <option value="4"></option>
+          <option value="1">Composition and design</option>
+          <option value="2">Colors, images and graphics</option>
+          <option value="3">Logic building and technological Challenge</option>
+          <option value="4">Learning new technology</option>
+          <option value="5">Neither of those</option>
         </select>
 
-        <h3></h3>
+        <h3>Which collocation describes you the best</h3>
         <select class="form-control" id="">
-          <option value="1"></option>
-          <option value="2"></option>
-          <option value="3"></option>
-          <option value="4"></option>
+          <option value="1">Quick learner</option>
+          <option value="2">Good team player</option>
+          <option value="3">Great at time and task management</option>
+          <option value="4">Neither of those</option>
         </select>
 
-        <h3></h3>
+        <h3>What is your endgame goal</h3>
         <select class="form-control" id="">
-          <option value="1"></option>
-          <option value="2"></option>
-          <option value="3"></option>
-          <option value="4"></option>
+          <option value="1">Freelance</option>
+          <option value="2">Get hired by large company like Microsoft</option>
+          <option value="3">Set up a tartup</option>
+          <option value="4">I am not sure yet</option>
         </select>
 
-        <h3></h3>
+        <h3>In your spare time would you rather</h3>
         <select class="form-control" id="">
-          <option value="1"></option>
-          <option value="2"></option>
-          <option value="3"></option>
-          <option value="4"></option>
+          <option value="1">Go hiking</option>
+          <option value="2">Practice coding</option>
+          <option value="3">Learn something new</option>
+          <option value="4">Watch TV</option>
         </select>
+
+        <button type="submit" class="btn btn-success">submit</button>
 
       </form>
 
-      <div class="output" id="">
+      <div class="output" id="notYours">
         <h3>Hey <span class=""></span></h3>
-        <p></p>
+        <p>It looks like programming is really for you. Try something else. There are lots of possibilities out there!</p>
+        <p>Go ahead and check out some resources listed below to find your perfect career path</p>
+        <ul>
+          <li><a href="https://www.princetonreview.com/quiz/career-quiz">Career Quiz</a></li>
+          <li><a href="https://www.thebalance.com/steps-to-choosing-career-525506">How to make a career choice when undesided</li>
+            <li><a href="https://www.careerkey.org/choose-a-career/how-to-choose-a-career.html#.WrVCa2aZPBI">How to choose a career</li>
+        </ul>
 
       </div>
 
-      <div class="output" id="">
-        <h3>Hey <span class=""></span></h3>
-        <p></p>
+      <div class="output" id="rubyRails">
+        <h3>Congratulations <span class=""></span>! You'r track of choice is Ruby/Rails</h3>
+        <p>Ruby is a favorite language of developers building interactive web applications. If an app involves users creating accounts, entering information, and interacting with dynamic content, there's a good chance it is built with Ruby. Ruby became popular because the Rails framework, which is written with Ruby, simplified many of the common tasks associated with building web applications. It's most popular with startups and smaller companies who are looking to build their product quickly.</p>
 
       </div>
 
-      <div class="output" id="">
-        <h3>Hey <span class=""></span></h3>
-        <p></p>
+      <div class="output" id="cssReact">
+        <h3>Congratulations <span class=""></span>! You'r track of choice is CSS/React</h3>
+        <p>Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language. Although most often used to set the visual style of web pages and user interfaces written in HTML and XHTML, the language can be applied to any XML document, including plain XML, SVG and XUL, and is applicable to rendering in speech, or on other media. Along with HTML and JavaScript, CSS is a cornerstone technology used by most websites to create visually engaging webpages, user interfaces for web applications, and user interfaces for many mobile applications.</p>
+
+        <p>CSS is designed primarily to enable the separation of presentation and content, including aspects such as the layout, colors, and fonts. This separation can improve content accessibility, provide more flexibility and control in the specification of presentation characteristics, enable multiple HTML pages to share formatting by specifying the relevant CSS in a separate .css file, and reduce complexity and repetition in the structural content.</p>
 
       </div>
 
-      <div class="output" id="">
-        <h3>Hey <span class=""></span></h3>
-        <p></p>
+      <div class="output" id="javaAndroid">
+        <<h3>Congratulations <span class=""></span>! You'r track of choice is Java/Android</h3>
+        <p>Java is also a favorite of enterprise companies, but its appeal is broader as well: it's one of the most popular of all programming languages, and it's used in everything from for high-performance processing to building Android user interfaces. Because Java has been very popular for a very long time and is used in so many applications, it is also a very high-demand language. If you're interested in working for an enterprise-level company, as an Android developer, or in high-performance applications, Java could be a good language to learn.</p>
 
       </div>
 
-      <div class="output" id="">
-        <h3>Hey <span class=""></span></h3>
-        <p></p>
+      <div class="output" id="C#-NET">
+        <h3>Congratulations <span class=""></span>! You'r track of choice is C#/.NET</h3>
+        <p>C# is most popular among bigger established businesses, often for building internal software. Because it's been around for a long time and has the backing of Microsoft, it is one of the most in-demand languages in the job market. C# has also been going through a bit of a rebirth lately, with Microsoft open sourcing the language and surrounding platform, porting it to run on Mac and Linux, and incorporating many of the best features of other languages. If you like the idea of working for a larger company on business software, C# is a great choice.</p>
 
       </div>
     </div>
