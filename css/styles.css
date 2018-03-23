@@ -5,3 +5,49 @@
 button {
   margin-top: 2%;
 }
+body {
+  font-family: serif;
+  font-size: 14pt;
+  color: #3e4147;
+}
+
+.container {
+  margin-left: 8%;
+  margin-right: 8%;
+}
+
+header {
+  height: 260px;
+  text-align: center;
+  padding-top: 50px;
+  background-color: #1d162b;
+}
+
+h1, h2 {
+  color: #dedce2;
+  font-family: monospace;
+}
+
+h3 {
+  font-family:monospace;
+}
+
+h2#trackerHeading {
+  background-color: #1d162b;
+}
+
+#intro {
+  margin-top: 30px;
+}
+
+img {
+  float: right;
+}
+
+.short {
+  width: 45%;
+}
+
+form {
+  margin-bottom: 20px;
+}

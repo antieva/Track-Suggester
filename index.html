@@ -11,28 +11,41 @@
   <body>
     <div class="container">
       <header>
-        <h1>I JUST FINISHED MY 'INTRODUCTION TO PROGRAMMING' COURSE</h1>
+        <h1>I JUST FINISHED MY <strong>INTRODUCTION TO PROGRAMMING</strong> COURSE</h1>
         <h2>WHAT PROGRAMMING LANGUAGE SHOULD I LEARN NOW?</h2>
       </header>
+    </div>
 
+    <div class="container" id="intro">
       <p>If you're an Epicodus student or anybody wondering which language to learn, the first thing you need to decide is if you want to focus more on front-end or back-end development.</p>
-      <p>Front-end developers are responsible for a website’s user-facing code and the architecture of its immersive user experiences. In order to execute those objectives, front-end devs must be adept at three main languages: HTML, CSS, and Javascript programming. In addition to fluency in these languages, front-end devs need to be familiar with frameworks like Bootstrap, Foundation, Backbone, AngularJS, and EmberJS, which ensure great-looking content no matter the device, and libraries like jQuery and LESS, which package code into a more useful, time-saving form. A lot of front-end developer job listings also call for experience with Ajax, a widely used technique for using Javascript that lets pages dynamically load by downloading server data in the background.</p>
-      <p>In order to make the server, application, and database communicate with each other, back-end devs use server-side languages like PHP, Ruby, Python, Java, and .Net to build an application, and tools like MySQL, Oracle, and SQL Server to find, save, or change data and serve it back to the user in front-end code. Job openings for back-end developers often also call for experience with PHP frameworks like Zend, Symfony, and CakePHP; experience with version control software like SVN, CVS, or Git; and experience with Linux as a development and deployment system.
-      <br>Back-end devs use these tools to create or contribute to web applications with clean, portable, well-documented code. But before writing that code, they need to collaborate with business stakeholders to understand their particular needs, then translate those into technical requirements and come up with the most effective and efficient solution for architecting the technology.</p>
-      <br>
+      <div class="row">
+        <div class="col-md-6">
+          <h3>Front-end</h3>
+          <p>Front-end developers are responsible for a website’s user-facing code and the architecture of its immersive user experiences. In order to execute those objectives, front-end devs must be adept at three main languages: HTML, CSS, and Javascript programming. In addition to fluency in these languages, front-end devs need to be familiar with frameworks like Bootstrap, Foundation, Backbone, AngularJS, and EmberJS, which ensure great-looking content no matter the device, and libraries like jQuery and LESS, which package code into a more useful, time-saving form. A lot of front-end developer job listings also call for experience with Ajax, a widely used technique for using Javascript that lets pages dynamically load by downloading server data in the background.
+          <br>Front-end developers spend their time making things look and work well, obsessing over layouts, navigation, colors, and design. If this type of work appeals to you, your best bet is to take CSS and Design classes at Epicodus.</p>
+        </div>
+        <div class="col-md-6">
+          <h3>Back-end</h3>
+          <p>In order to make the server, application, and database communicate with each other, back-end devs use server-side languages like PHP, Ruby, Python, Java, and .Net to build an application, and tools like MySQL, Oracle, and SQL Server to find, save, or change data and serve it back to the user in front-end code. Job openings for back-end developers often also call for experience with PHP frameworks like Zend, Symfony, and CakePHP; experience with version control software like SVN, CVS, or Git; and experience with Linux as a development and deployment system.
+          <br>Back-end devs use these tools to create or contribute to web applications with clean, portable, well-documented code. But before writing that code, they need to collaborate with business stakeholders to understand their particular needs, then translate those into technical requirements and come up with the most effective and efficient solution for architecting the technology.</p>
+       </div>
+       </div>
       <p>Don't stress too much about making the right choice! That said, each language has found a bit of a niche, and depending on your interests, you might be attracted to one over another.</p>
-      <h3>Track suggester fot future Epicodus students</h3>
       <p>While all languages have similarities, and switching between languages and platforms is very common in both internships and jobs, applicants should still choose the track they wish to complete with care.</p>
+
+      <h2 id="trackerHeading">Track suggester for current and future Epicodus students</h2>
       <p>Fill out our survay and find your perfect track!</p>
     </div>
 
     <div class="container">
+
+      <img src="img/img1.jpeg" alt="words">
       <form class="survay">
 
         <h3>Let's get started!</h3>
         <div class="form-group">
           <label for="name">Please enter your name</label>
-          <input id="name" type="text" class="form-control">
+          <input id="name" type="text" class="form-control short">
         </div>
 
 
@@ -76,7 +89,7 @@
 
 
         <label class="control-label" for="enjoy"><h4>What do you enjoy the most</h4></label>
-        <select class="form-control" id="enjoy">
+        <select class="form-control short" id="enjoy">
           <option value="1">Composition and design</option>
           <option value="2">Colors, images and graphics</option>
           <option value="3">Logic building and technological Challenge</option>
@@ -85,7 +98,7 @@
         </select>
 
         <label class="control-label" for="describe"><h4>Which collocation describes you the best</h4></label>
-        <select class="form-control" id="describe">
+        <select class="form-control short" id="describe">
           <option value="1">Quick learner</option>
           <option value="2">Good team player</option>
           <option value="3">Great at time and task management</option>
@@ -93,7 +106,7 @@
         </select>
 
         <label class="control-label" for="goal"><h4>What is your endgame goal</h4></label>
-        <select class="form-control" id="goal">
+        <select class="form-control short" id="goal">
           <option value="1">Freelance</option>
           <option value="2">Get hired by large company like Microsoft</option>
           <option value="3">Set up a startup</option>
@@ -101,7 +114,7 @@
         </select>
 
         <label class="control-label" for="spareaTime"><h4>Which programming language are you familiar with the most </h4></label>
-        <select class="form-control" id="spareTime">
+        <select class="form-control short" id="spareTime">
           <option value="1">JavaScript</option>
           <option value="2">Ruby</option>
           <option value="3">CSS</option>
@@ -109,7 +122,7 @@
           <option value="5">None</option>
         </select>
 
-        <button type="submit" class="btn btn-success">submit</button>
+        <button type="submit" class="btn btn-info">SUBMIT</button>
 
       </form>
 
