@@ -23,7 +23,7 @@ header {
   background-color: #1d162b;
 }
 
-h1, h2 {
+h1, h2,.myFooter {
   color: #dedce2;
   font-family: monospace;
 }
@@ -50,4 +50,11 @@ img {
 
 form {
   margin-bottom: 20px;
+}
+
+footer {
+  margin-top: 5px;
+  margin-bottom: 10px;
+  padding: 2%;
+  background-color: #1d162b;
 }
