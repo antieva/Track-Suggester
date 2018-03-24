@@ -14,9 +14,9 @@ $(document).ready(function(){
     };
 
     if (userEnjoy === '5' && userDescribes === '4' || userPriorities === '5'){
+      $(".output").hide();
       $(".addressing").text(userName);
       $("#notYours").show();
-      $(".output").hide();
     } else if (userPriorities === '1' || userPriorities === '4' || userPriorities === '6' && userEnjoy === '1' || userEnjoy === '2'){
       $(".output").hide();
       $(".addressing").text(userName);
