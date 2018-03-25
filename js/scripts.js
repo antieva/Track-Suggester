@@ -6,7 +6,7 @@ $(document).ready(function(){
     var userPriorities = $("input:radio[name=development]:checked").val();
     var userEnjoy = $("select#enjoy").val();
     var userDescribes = $("select#describe").val();
-    var userSpareTime = $("select#spareTime").val();
+    var userGoal = $("select#goal").val();
 
     if (!userName){
       alert("Please enter your name!");
@@ -17,22 +17,36 @@ $(document).ready(function(){
       $(".output").hide();
       $(".addressing").text(userName);
       $("#notYours").show();
-    } else if (userPriorities === '1' || userPriorities === '4' || userPriorities === '6' && userEnjoy === '1' || userEnjoy === '2'){
-      $(".output").hide();
-      $(".addressing").text(userName);
-      $("#cssReact").show();
-    } else if(userPriorities === '3' && userEnjoy === '3' || usergoal === '2'){
-      $(".output").hide();
-      $(".addressing").text(userName);
-      $("#c-NET").show();
-    } else if (userPriorities === '2' && userEnjoy === '3' || userEnjoy === '4' || usergoal === '3') {
-      $(".output").hide();
-      $(".addressing").text(userName);
-      $("#rubyRails").show();
-    } else if (userPriorities === '6' && userEnjoy === '3' || userEnjoy === '4' || usergoal === '4') {
-      $(".output").hide();
-      $(".addressing").text(userName);
-      $("#javaAndroid").show();
+    } else if (userPriorities === '1' || userPriorities === '4') {
+        if (userEnjoy === '1' || userEnjoy === '2'){
+          $(".output").hide();
+          $(".addressing").text(userName);
+          $("#cssReact").show();
+        } else {
+          $(".output").hide();
+          $(".addressing").text(userName);
+          $("#rubyRails").show();
+        }
+    } else if(userPriorities === '2' || userPriorities === '3'){
+        if (userGoal === '2'){
+          $(".output").hide();
+          $(".addressing").text(userName);
+          $("#c-NET").show();
+        } else {
+          $(".output").hide();
+          $(".addressing").text(userName);
+          $("#rubyRails").show();
+        }
+    } else if (userPriorities === '6') {
+        if (userEnjoy === '5' && userDescribes === '4') {
+          $(".output").hide();
+          $(".addressing").text(userName);
+          $("#notYours").show();
+        } else {
+          $(".output").hide();
+          $(".addressing").text(userName);
+          $("#cssReact").show();
+        }
     };
 
     event.preventDefault();

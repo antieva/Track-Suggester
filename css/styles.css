@@ -23,9 +23,10 @@ header {
   background-color: #1d162b;
 }
 
-h1, h2,.myFooter {
+h1, h2 {
   color: #dedce2;
   font-family: monospace;
+  text-transform: uppercase;
 }
 
 h3 {
@@ -53,8 +54,13 @@ form {
 }
 
 footer {
-  margin-top: 5px;
-  margin-bottom: 10px;
-  padding: 2%;
-  background-color: #1d162b;
+  font-family: monospace;
+  margin: 5px 0;
+  padding: 20px 50px;
+  background: #1d162b;
+  color: #dedce2;
 }
+ footer li {
+   display: inline;
+   margin: 0 15px;
+ }
